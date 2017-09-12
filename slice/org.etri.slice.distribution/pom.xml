@@ -10,14 +10,25 @@
 	</parent>
 
 	<artifactId>org.etri.slice.distribution</artifactId>
-	<name>... org.etri.slice.distribution</name>
+	<name>The SLICE distribution</name>
 	<description>org.etri.slice.distribution :: distribution</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.ipojo.distribution.quickstart</artifactId>
+			<version>${felix.ipojo.version}</version>
+			<type>zip</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.main</artifactId>
-			<version>5.6.6</version>
+			<version>5.6.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.etri.slice</groupId>
+			<artifactId>org.etri.slice.api</artifactId>
+			<version>0.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.etri.slice</groupId>
@@ -30,13 +41,8 @@
 			<version>0.0.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.etri.slice</groupId>
-			<artifactId>org.etri.slice.app</artifactId>
-			<version>0.0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.etri.slice</groupId>
-			<artifactId>org.etri.slice.lib</artifactId>
+			<groupId>org.etri.slice.devices</groupId>
+			<artifactId>org.etri.slice.devices.aircon</artifactId>
 			<version>0.0.1</version>
 		</dependency>
 	</dependencies>

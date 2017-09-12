@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1503923070109
+Bnd-LastModified: 1505205591114
 Build-Jdk: 1.8.0_131
 Built-By: user
 Bundle-Description: org.etri.slice.core :: core
@@ -8,14 +8,15 @@ Bundle-Name: ... org.etri.slice.core
 Bundle-SymbolicName: org.etri.slice.core
 Bundle-Version: 0.0.1
 Created-By: Apache Maven Bundle Plugin
-Export-Package: org.etri.slice.core;uses:="org.etri.slice.commons";versi
- on="0.0.1",org.etri.slice.core.rule;uses:="org.kie.api.builder,org.kie.
- api.runtime";version="0.0.1"
-Import-Package: org.apache.felix.ipojo.extender;version="[1.12,2)",org.e
- tri.slice.commons;version="[0.0,1)",org.etri.slice.core.rule,org.kie.ap
- i;version="[6.5,7)",org.kie.api.builder;version="[6.5,7)",org.kie.api.r
- untime;version="[6.5,7)",org.kie.api.runtime.rule;version="[6.5,7)",org
- .kie.scanner;version="[0.0,1)",org.osgi.framework;version="[1.5,2)",org
- .osgi.service.log;version="[1.3,2)"
+Export-Package: org.etri.slice.core.inference;uses:="org.etri.slice.api.
+ inference,org.kie.api.builder,org.kie.api.event.rule,org.kie.api.runtim
+ e,org.kie.scanner";version="0.0.1",org.etri.slice.core;uses:="org.etri.
+ slice.api,org.etri.slice.api.inference";version="0.0.1"
+Import-Package: org.etri.slice.api;version="[0.0,1)",org.etri.slice.api.
+ inference;version="[0.0,1)",org.kie.api;version="[6.5,7)",org.kie.api.b
+ uilder;version="[6.5,7)",org.kie.api.definition.rule;version="[6.5,7)",
+ org.kie.api.event.rule;version="[6.5,7)",org.kie.api.runtime;version="[
+ 6.5,7)",org.kie.api.runtime.rule;version="[6.5,7)",org.kie.scanner;vers
+ ion="[0.0,1)",org.slf4j;version="[1.7,2)"
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-3.3.0.201609221906
